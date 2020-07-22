@@ -1,11 +1,11 @@
 Python Birds
 ===========
 
-Projeto para Ensino de Programação Orientadas a Objetos em Python.
+Projeto pessoal criado no decorrer do curso de Python da Python Pro em 2020, por Gabriely Di Folco Rocha
 
-A versão utilizada para desenvolvimento foi Python 3.4
+Utilizei o Python 3.8.6 no desenvolvimento.
 
-Um vídeo fala mais que 1000 palavras: [Python Birds](https://www.youtube.com/watch?v=b899h0lNd7U&list=PLA05yVJtRWYTm0sIa6n56UpCjCsR5ekla)
+[Python Birds](https://www.youtube.com/watch?v=b899h0lNd7U&list=PLA05yVJtRWYTm0sIa6n56UpCjCsR5ekla)
 
 # Abordagem
 
@@ -19,10 +19,7 @@ Os testes se encontram dentro do pacote "testes" e servem para definir a dinâmi
     
 Explicação detalhada sobre classes e métodos se encontram em [Simplificação do Jogo](#simplifica%C3%A7%C3%A3o-do-jogo)
 
-## Ordem de desenvolvimento
-
-A ordem preferida é começar pelos atores, seguindo a ordem dos testes presentes no script atores_testes.py.
-Depois passar para a fase_teste.py, onde é implementada uma fase.
+## Jogo
 
 Após o desenvolvimento é possível emular um jogo que termina em vitória rodando:
 
@@ -92,7 +89,7 @@ Além disso, um intervalo é recebido como parâmetro indicando qual a tolerânc
 O método caracter retorna 'A' quando o ator tem status Ativo e '+' caso contrário. Também é depende do tempo.
 
 
-## Classe Obstaculo
+## Classe Obstáculo
 
 Classe que representa obstáculos na fase e que podem ser destruidos por pássaros. Herda de ator. Seu caracter de 
 representação é a letra "O" quando Ativo.
@@ -113,9 +110,9 @@ Classe base de todos os passáros. Cada tipo possui uma velocidade de lançament
 ângulo (teta), em graus, no qual o passáro deve ser lançado. O lançamento respeita as regras de lançamento oblíquo com 
 gravidade (G) constante e igual a 10 m/s^2.
 
-### Método lancar
+### Método lançamento
 
-O método lançar recebe o ângulo, em graus, que será feito o lançamento. Cada pássaro deve armazenar esse valor e o tempo
+Recebe o ângulo, em graus, que será feito o lançamento. Cada pássaro deve armazenar esse valor e o tempo
 de lançamento para cálculo de sua posíção. Lembrar que o tempo das fórmulas é delta_t = T_final - T_inicial
 
 ### Método de resetar
@@ -133,7 +130,7 @@ Todo pássaro que colidir com o chão (y<=0) deve ser destruído.
 Esse método deve retornar verdadadeiro se o pássaro foi lançado (tempo de lançamento é None).
 Caso contrário deve retornar falso
 
-### Lançamentomento
+### Lançamento
 
 Se o pássaro ainda não foi lançado, ou se o tempo de jogo é menor que o tempo de lançamento,
 O pássaro deve permanecer na posição inicial.
@@ -153,11 +150,11 @@ Fórmula X=X0+v*cos(teta)*delta_t.
 Fórmula Y=Y0+v*sen(teta)delta_t-(G*delta_t^2)/2.
     
 
-## Classe Passaro Vermelho
+## Classe Pássaro Vermelho
 
 Tipo de Pássaro que representa o pássaro vermelho. Possui velocidade de lançamento igual a 20 m/s. Seu caracter é "D".
 
-## Classe Passaro Amarelo
+## Classe Pássaro Amarelo
 
 Tipo de Pássaro que representa o pássaro amarelo. Possui velocidade de lançamento igual a 30 m/s. Seu caracter é ">".
 
@@ -179,7 +176,7 @@ Método que adiciona um ou mais pássaros na fase
 
 ### Método acabou
 
-Método que recebe o tempo do jogo e retorna verdadeiro (True) se o jogo acabou e (False) caso contrário.
+Recebe o tempo do jogo e retorna verdadeiro (True) se o jogo acabou e falso (False) caso contrário.
 O jogo pode acabar por duas razôes:
 
 1. Todos porcos foram destruídos
@@ -193,7 +190,7 @@ Recebe o tempo como parâmetro e retorna mensagem com status do jogo.
 2. Se o jogo acabou e não existem porcos ativos, retorna a mensagem "Jogo em encerrado. Você ganhou!"
 3. Se o jogo acabou e existem porcos ativos, retorna a mensagem "Jogo em encerrado. Você perdeu!"
 
-### Método lancar
+### Método lançar
 
 Recebe o ângulo e o tempo do lançamento. Deve delegar o lançamento ao primeiro pássaro ativo da lista de pássaros.
 
@@ -207,5 +204,3 @@ Ele deve:
 2. Retornar instâncias da classe Ponto, informando x,y e caracter respectivo a cada ator.
 
 ### Divirta-se!!!!
-
-Powered by [Python Pro](http://adm.python.pro.br)
