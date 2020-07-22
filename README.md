@@ -1,11 +1,11 @@
 Python Birds
 ===========
 
-Projeto para Ensino de Programação Orientadas a Objetos em Python.
+Projeto pessoal criado no decorrer do curso de Python da Python Pro em 2020, por Gabriely Di Folco Rocha
 
-A versão utilizada para desenvolvimento foi Python 3.4
+Utilizei o Python 3.8.6 no desenvolvimento.
 
-Um vídeo fala mais que 1000 palavras: [Python Birds](https://www.youtube.com/watch?v=b899h0lNd7U&list=PLA05yVJtRWYTm0sIa6n56UpCjCsR5ekla)
+[Python Birds](https://www.youtube.com/watch?v=b899h0lNd7U&list=PLA05yVJtRWYTm0sIa6n56UpCjCsR5ekla)
 
 # Abordagem
 
@@ -19,10 +19,7 @@ Os testes se encontram dentro do pacote "testes" e servem para definir a dinâmi
     
 Explicação detalhada sobre classes e métodos se encontram em [Simplificação do Jogo](#simplifica%C3%A7%C3%A3o-do-jogo)
 
-## Ordem de desenvolvimento
-
-A ordem preferida é começar pelos atores, seguindo a ordem dos testes presentes no script atores_testes.py.
-Depois passar para a fase_teste.py, onde é implementada uma fase.
+## Jogo
 
 Após o desenvolvimento é possível emular um jogo que termina em vitória rodando:
 
