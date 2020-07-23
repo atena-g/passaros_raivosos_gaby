@@ -27,13 +27,13 @@ class Fase():
         lista.extend(atores)
 
     def adicionar_obstaculo(self, *obstaculos):
-        self._adicionar_ator(self._obstaculos, *obstaculos)
+        self._obstaculos.extend(obstaculos)
 
     def adicionar_porco(self, *porcos):
-        self._adicionar_ator(self._porcos, *porcos)
+        self._porcos.extend(porcos)
 
     def adicionar_passaro(self, *passaros):
-        self._adicionar_ator(self._passaros, *passaros)
+        self._passaros.extend(passaros)
 
     def acabou(self, tempo):
         return not self._existe_porco_ativo(tempo) or not self._existe_passaro_ativo(tempo)
