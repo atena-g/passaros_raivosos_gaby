@@ -9,7 +9,7 @@ O Motor terá a responsabilidade de controlar a velocidade:
 Ele oferece os seguintes atributos:
 1) Atributo de dado velocidade.
 2) Método acelerar, que deverá incrementar a velocidade de uma unidade.
-3) Método frear, que deverá decrementar a velocidade de duas unidade.
+3) Método frear, que deverá decrementar a velocidade de duas unidades.
 
 A Direção terá a responsabilidade de controlar a direção. Oferece os seguintes atributos:
 1) Valor de direção com valores possíveis: Norte, Sul, Leste, Oeste.
@@ -66,3 +66,42 @@ A Direção terá a responsabilidade de controlar a direção. Oferece os seguin
     >>> carro.calcular_direção
     'Oeste'
 """
+
+class Carro:
+     def __init__(self, *motor, *direcao):
+         self.motor = motor
+         self.direcao = direcao
+
+     NORTE = 'Norte'
+     LESTE = 'Leste'
+     SUL = 'Sul'
+     OESTE = 'Oeste'
+
+     class Direção(self):
+         rotação_a_direita_dct={
+             NORTE:LESTE, LESTE:SUL, SUL:OESTE, OESTE:NORTE
+         }
+         rotação_a_esquerda_dct={
+             NORTE:OESTE, OESTE:SUL, SUL:LESTE, LESTE:NORTE
+         }
+         def __init__(self):
+             self.valor = LESTE
+
+         def girar_a_direita(self):
+             self.valor = self.rotação_a_direita_dct[self.valor]
+         def girar_a_esquerda(self):
+             self.valor = self.rotação_a_esquerda_dct[self.valor]
+
+
+
+     class Motor():
+         def __init__(self):
+             self.velocidade = 0
+         def acelerar (self):
+             self.acelerar += 1
+         def frear (self):
+             self.acelerar -= 2
+             self.velocidade = max(0, self.velocidade)
+
+
+
