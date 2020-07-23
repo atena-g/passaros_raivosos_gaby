@@ -43,7 +43,7 @@ class Fase():
             return 'Jogo em encerrado. Você ganhou!'
         if self._existe_passaro_ativo(tempo):
             return 'Jogo em andamento.'
-        return 'Jogo em encerrado. Você perdeu!'
+        return 'Jogo encerrado. Você perdeu!'
 
     def lancar(self, angulo, tempo):
         for passaro in self._passaros:
