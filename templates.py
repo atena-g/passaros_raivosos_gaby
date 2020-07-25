@@ -2,11 +2,13 @@
 FIM = '''|------------------------------------------------------------------------------|
 |                                                                              |
 |                                                                              |
-|            PPPP     Y   Y     TTTTT    H   H     OOO     NN   N              |
-|            P   P     Y Y        T      H   H    O   O    N N  N              |
-|            PPPP       Y         T      HHHHH    O   O    N  N N              |
-|            P          Y         T      H   H    O   O    N   NN              |
-|            P          Y         T      H   H     OOO     N    N              |
+|   GGGGGG     Y      Y    TTTTT    H   H     OOO     NN   N                   |
+|   G            Y   Y       T      H   H    O   O    N    N                   |
+|   G             Y Y        T      H   H    O   O    N N  N                   |
+|   G    GGG       Y         T      HHHHH    O   O    N  N N                   |
+|   G      G       Y         T      H   H    O   O    N   NN                   |        
+|   GGGGGGGG       Y         T      H   H     OOO     N    N                   |    
+|                                                                              |
 |                                                                              |
 |                                                                              |
 |                                                                              |
@@ -16,7 +18,7 @@ FIM = '''|----------------------------------------------------------------------
 |                 B   B      II      R R      D   D        S                   |
 |                 BBBB       II      R   R    DDDD     SSSS                    |
 |                                                                              |
-|                                                                              |
+|                                          POR GABRIELY DI FOLCO ROCHA         |
 |                                                                              |
 |TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT|
 '''

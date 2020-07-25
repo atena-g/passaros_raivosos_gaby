@@ -107,6 +107,7 @@ class AtorTestes(AtorBaseTest):
         self.assert_nao_colisao(Ator(1, 3), ator)
 
     def test_caracter(self):
+        'Teste de caracter para ator ATIVO e DESTRUIDO'
         ator = Ator()
         self.assert_ator_caracteres(ator, 'A', ' ')
 
